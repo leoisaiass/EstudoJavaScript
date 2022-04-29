@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#filmes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+#filmes div {
+  width: 15%;
+  margin: 15px;
+  border-radius: 10px; /* Arredondar bordas*/
+  box-shadow: 0px 0px 5px 5px rgb(233, 231, 231);
+  /*
+  Primeiro: posição horizontal
+  Segundo: posição vertical
+  Terceiro: efeito esfuçado
+  Quarto: tamanho do esfumaçado
+  Quinto: cor
+  */
+  background-color: white;
+  transition: ease 1s;
+}
+
+#filmes div img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.voto {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  /* Colocar a bolinha com a posição para cima */
+  margin-top: -30px;
+  /* Colocar a bolinha na frente da foto */
+  z-index: 10000;
+  position: relative;
+  /* Ajustar o texto para dentro da bolinha */
+  font-family: "Gadugi";
+  text-align: center;
+  padding-top: 7px;
+  /* Acrescentar a bordinha colorida para o círculo preto */
+  border: 2px solid greenyellow;
+  box-shadow: 0px 0px 0px 2px black;
+}
+
+h2 {
+  font-family: "Gadugi";
+  font-size: 12pt;
+  margin: 3px;
+}
+
+.data {
+  text-align: center;
+  font-family: "Gadugi";
+  font-size: 8pt;
+}
+
+#filmes div:hover {
+  cursor: pointer;
+  z-index: 100000;
+  transform: scale(1.5);
+  box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0);
+  /*VW = view port
+    rgba = o último simboliza a transparência*/
+}
