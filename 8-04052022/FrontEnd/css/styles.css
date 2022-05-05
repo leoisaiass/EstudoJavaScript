@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 80px;
+  text-align: center;
+  background-color: mediumaquamarine;
+  font-family: "Arial black";
+  font-size: 40pt;
+}
+
+#cadastro {
+  padding: 20px;
+}
+
+#cadastro a {
+  font-family: "Arial";
+  font-size: 20pt;
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+}
+
+#cadastro a:hover {
+  color: #f00;
+  padding-left: 10px;
+}
+
+form {
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+input {
+  width: 100%;
+  margin: 7px;
+  padding: 10px;
+  display: block; /*Quebra de linha*/
+}
+
+button {
+  padding: 10px;
+  border: 0px;
+  background-color: mediumslateblue;
+  color: whitesmoke;
+  position: absolute;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+}
+
+#produtos {
+  padding-top: 2 0px;
+  /* background-color: rgb(248, 190, 248); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 5px silver;
+  justify-content: center; /*Só funciona quando a caixa é flex*/
+}
+
+#produtos div {
+  width: 30%;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #eee;
+}
+
+#produtos div img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-family: "Arial";
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Arial";
+  font-size: 13pt;
+  font-weight: lighter;
+}
+
+h5 {
+  color: #500;
+  padding-top: 3px;
+  font-family: "Arial";
+}
